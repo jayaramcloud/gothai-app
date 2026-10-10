@@ -7,16 +7,40 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <h1>Hello from gothai!</h1>
     <p>This is my first website. It lives on GitHub and is published automatically.</p>
   </header>
 
-  <main>
-    <h2>Try it</h2>
-    <button id="greet">Click me</button>
-    <p id="message"></p>
-  </main>
+  <div class="page-layout">
+    <nav class="sidebar" aria-label="Main navigation">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="#home" aria-current="page">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#help">Help</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+    </nav>
+
+    <main id="home">
+      <h2>Try it</h2>
+      <button id="greet">Click me</button>
+      <p id="message"></p>
+      <section id="products" aria-labelledby="products-heading">
+        <h2 id="products-heading">Products</h2>
+        <p>Explore what we offer.</p>
+      </section>
+      <section id="help" aria-labelledby="help-heading">
+        <h2 id="help-heading">Help</h2>
+        <p>Find help and support here.</p>
+      </section>
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact us</h2>
+        <p>Get in touch with us.</p>
+      </section>
+    </main>
+  </div>
 
   <footer>
     <p>Edit <code>public/index.html</code>, <code>public/style.css</code> and <code>public/script.js</code>, then push to GitHub.</p>
