@@ -41,6 +41,7 @@ h1 { color: #f6821f; }
   padding: 0.45rem 0.6rem;
   border-radius: 5px;
   color: #174ea6;
+  font-weight: 700;
   text-decoration: none;
 }
 .sidebar a:hover, .sidebar a:focus-visible {
